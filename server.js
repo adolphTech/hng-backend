@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3000; 
 
 // Endpoint to handle GET requests
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     const slackName = req.query.slack_name ;
     const track = req.query.track ;
 
@@ -12,14 +12,14 @@ app.get('/', (req, res) => {
     const currentDate = new Date();
     const currentDay = daysOfWeek[currentDate.getUTCDay()];
 
-    // Get the current UTC time within a +/-2 minute window
+    // Get the current UTC time 
     const currentUTC = new Date(Date.now() + (Math.random() * 4 - 2) * 60 * 1000).toISOString();
 
     // GitHub URLs
-    const githubFileURL = 'https://github.com/username/repo/blob/main/file_name.ext';
-    const githubRepoURL = 'https://github.com/username/repo';
+    const githubFileURL = 'https://github.com/adolphTech/hng-backend/blob/task-1/server.js';
+    const githubRepoURL = 'https://github.com/adolphTech/hng-backend';
 
-    // Create the response JSON
+    //response JSON
     const jsonResponse = {
         slack_name: slackName,
         current_day: currentDay,
@@ -35,5 +35,5 @@ app.get('/', (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on ${port}`);
 });
