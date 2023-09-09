@@ -12,8 +12,10 @@ app.get('/api', (req, res) => {
     const currentDate = new Date();
     const currentDay = daysOfWeek[currentDate.getUTCDay()];
 
-    const currentUTC = new Date(Date.now() + (Math.random() * 4 - 2) * 60 * 1000);
-    const currentUTCFormatted = currentUTC.toISOString();
+    // const currentUTC = new Date(Date.now() + (Math.random() * 4 - 2) * 60 * 1000);
+    // const currentUTCFormatted = currentUTC.toISOString();
+
+    const date = new Date(); and `${date.toISOString().split('.')[0] + "Z"}`
 
     // GitHub URLs
     const githubFileURL = 'https://github.com/adolphTech/hng-backend/blob/task-1/server.js';
@@ -23,7 +25,7 @@ app.get('/api', (req, res) => {
     const jsonResponse = {
         slack_name: slackName,
         current_day: currentDay,
-        utc_time: currentUTCFormatted,
+        utc_time: date,
         track: track,
         github_file_url: githubFileURL,
         github_repo_url: githubRepoURL,
