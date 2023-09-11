@@ -22,7 +22,7 @@ My Awesome Project
 
 Welcome to my awesome project! This project is designed to [briefly describe its purpose].
 
-![Project Screenshot](screenshot.png)
+![Project Screenshot](/screenshots/screenshot.png)
 
 ## Features
 
