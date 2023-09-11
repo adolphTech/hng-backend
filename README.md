@@ -26,9 +26,31 @@ Welcome to the Person API project! This project aims to create a simple and vers
 
 ## Features
 
-- Feature 1: Describe Feature 1 here.
-- Feature 2: Explain Feature 2 in detail.
-- Feature 3: Highlight Feature 3's benefits.
+### Feature 1: User Registration
+
+- Users can register in the system with their personal information, including name, email, age, phone number, and nationality.
+- This feature ensures that new users can easily join the system and begin using the API.
+
+### Feature 2: Person Retrieval
+
+- Users can retrieve the details of a person by providing their unique user ID.
+- This feature enables users to access specific user information quickly and efficiently.
+
+### Feature 3: Person Update
+
+- Users have the capability to update the details of an existing person using their user ID.
+- This feature allows users to modify specific fields such as name, email, age, phone number, or nationality without affecting other attributes.
+
+### Feature 4: Person Deletion
+
+- Users can remove a person from the system by providing their user ID.
+- This feature facilitates the deletion of specific user records, maintaining data cleanliness.
+
+### Feature 5: Dynamic Parameter Handling
+
+- The API can dynamically process CRUD operations based on various parameters provided by users.
+- For example, users can perform CRUD operations on a person using their name instead of the user ID, enhancing user-friendliness and versatility.
+
 
 ## Getting Started
 
@@ -47,4 +69,9 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-project.git
+   git clone -b task-2 --single-branch https://github.com/adolphTech/hng-backend.git
+
+
+2. Install the node modules  run the following command:
+    ```bash
+    npm install
