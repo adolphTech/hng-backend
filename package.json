@@ -2,9 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,18 @@
   "bugs": {
     "url": "https://github.com/adolphTech/hng-backend/issues"
   },
-  "homepage": "https://github.com/adolphTech/hng-backend#readme"
+  "homepage": "https://github.com/adolphTech/hng-backend#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "mongoose": "^7.5.0",
+    "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.6.4",
+    "supertest": "^6.3.3"
+  }
 }
