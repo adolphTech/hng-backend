@@ -20,7 +20,7 @@ My Awesome Project
 
 ## Introduction
 
-Welcome to my awesome project! This project is designed to [briefly describe its purpose].
+Welcome to the Person API project! This project aims to create a simple and versatile REST API capable of performing CRUD (Create, Read, Update, Delete) operations on a "person" resource. The API can interact with any MONGO database, providing flexibility in your development stack. To ensure robustness and security, the API dynamically handles parameters, allowing actions like adding or retrieving a person by ID].
 
 ![Project Screenshot](/screenshots/screenshot.png)
 
