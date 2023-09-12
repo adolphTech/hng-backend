@@ -123,7 +123,7 @@ const deletePerson = async (req, res) => {
       return res.status(404).json({ error: 'Person not found' });
     }
 
-    res.json(person);
+    res.json({message :"deleted successfully" ,person});
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

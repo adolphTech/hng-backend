@@ -13,7 +13,7 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Usage / API Documentation](#usage)
+- [API Documentation](#Api-Documentation)
 
 
 ## Introduction
@@ -85,3 +85,121 @@ Before you begin, ensure you have met the following requirements:
     npm install
 
 3. Input your string connection ```MONGO_URI``` in the ```.env``` file
+
+## Api Documentation
+
+## Sample API Usage
+
+Here's an example of how to use the Task2-HNG API to create a new person with just the "name" field in the request body:
+
+### Create a New Person
+
+- **Endpoint**: `POST /api/:name`
+- **Request URL**: [https://task2-hng.onrender.com/api/adolph](https://task2-hng.onrender.com/api/persons/adolph)
+- **Request Method**: POST
+ 
+ **Response Body** 
+ ```
+ {
+  "name": "adolph",
+  "_id": "64ffebd7bc5dd0675085cd07",
+  "__v": 0
+}
+ ```
+
+Here's an example of how to use the Task2-HNG API to GET a new person with just the "name" field in the Params:
+
+### Get a Person with name
+
+- **Endpoint**: `GET /api/:name`
+- **Request URL**: [https://task2-hng.onrender.com/api/adolph](https://task2-hng.onrender.com/api/persons/adolph)
+- **Request Method**:GET
+
+
+ **Response Body** 
+ ```
+{
+  "_id": "64ffebd7bc5dd0675085cd07",
+  "name": "adolph",
+  "__v": 0
+}
+ ```
+
+ Here's an example of how to use the Task2-HNG API to UPDATE a new person.This shows how we changing the name from `Adolph` to `Mark`.
+
+### Update  a Person .
+
+- **Endpoint**: `PUT /api/:name`
+- **Request URL**: [https://task2-hng.onrender.com/api/adolph](https://task2-hng.onrender.com/api/persons/adolph)
+- **Request Method**:PUT
+- **Request Body**:
+```
+{
+  "name":"Mark"
+}
+```
+
+ **Response Body** 
+ ```
+{
+  "_id": "64ffebd7bc5dd0675085cd07",
+  "name": "mark",
+  "__v": 0
+}
+ ```
+
+### Delete a Person .
+
+- **Endpoint**: `DELETE /api/:name`
+- **Request URL**: [https://task2-hng.onrender.com/api/mark](https://task2-hng.onrender.com/api/persons/mark)
+- **Request Method**:DELETE
+
+ **Response Body** 
+ ```
+{
+  "_id": "64ffebd7bc5dd0675085cd07",
+  "name": "mark",
+  "__v": 0
+}
+ ```
+
+ ### Error Responses
+
+In case of errors, the Task2-HNG API returns appropriate error responses. Here are some examples of error responses for the GET, PUT, and DELETE endpoints:
+
+### GET `/api/persons/name`
+
+- **Request URL**: [https://task2-hng.onrender.com/api/nonexistent](https://task2-hng.onrender.com/api/nonexistent)
+- **Request Method**: GET
+
+#### Error Response (404 - Not Found)
+
+```json
+{
+  "error": "Person not found"
+}
+```
+### PUT `/api/persons/name`
+
+- **Request URL**: [https://task2-hng.onrender.com/api/nonexistent](https://task2-hng.onrender.com/api/nonexistent)
+- **Request Method**: PUT
+
+#### Error Response (404 - Not Found)
+
+```json
+{
+  "error": "Person not found"
+}
+```
+
+### GET `/api/persons/:name`
+
+- **Request URL**: [https://task2-hng.onrender.com/api/nonexistent](https://task2-hng.onrender.com/api/nonexistent)
+- **Request Method**: DELETE
+
+#### Error Response (404 - Not Found)
+
+```json
+{
+  "error": "Person not found"
+}
