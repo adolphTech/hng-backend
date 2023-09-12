@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
-const helmet = require('helmet');
+// const helmet = require('helmet');
 
 
 
@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 // cookie parser
 app.use(cookieParser());
 app.use(cors());
-app.use(helmet());
+// app.use(helmet());
 
 
 
