@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [API Documentation](https://documenter.getpostman.com/view/21648125/2s9YC2zto5)
 - [Routes and Controllers](#routes-and-controllers)
   - [Create a Person](#create-a-person)
   - [Create a Person with JSON Body](#create-a-person-with-json-body)
@@ -13,12 +14,14 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [API Documentation](#Api-Documentation)
+- [Usage](#usage)
 
 
 ## Introduction
 
 Welcome to the Person API project! This API is designed to perform CRUD (Create, Read, Update, Delete) operations on a "person" resource. It offers flexibility by allowing actions based on either a person's ID or name. Below, you'll find details about the routes and controllers that handle these operations.
+
+Click here to see the API documentation [here 👉🏽👉🏽👉🏽](https://documenter.getpostman.com/view/21648125/2s9YC2zto5)
 
 ## Routes and Controllers
 
@@ -86,9 +89,9 @@ Before you begin, ensure you have met the following requirements:
 
 3. Input your string connection ```MONGO_URI``` in the ```.env``` file
 
-## Api Documentation
+## usage
 
-## Sample API Usage
+### Sample API Usage
 
 Here's an example of how to use the Task2-HNG API to create a new person with just the "name" field in the request body:
 
