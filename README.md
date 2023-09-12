@@ -1,4 +1,4 @@
-# HGN BACKEND stage two - Person API
+# HNG BACKEND stage two - Person API
 
 ## Table of Contents
 
@@ -11,6 +11,7 @@
   - [Update a Person by ID or Name](#update-a-person-by-id-or-name)
   - [Delete a Person by ID or Name](#delete-a-person-by-id-or-name)
 - [Database Model](#database-model)
+  -[UML](#UML)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -21,7 +22,9 @@
 
 Welcome to the Person API project! This API is designed to perform CRUD (Create, Read, Update, Delete) operations on a "person" resource. It offers flexibility by allowing actions based on either a person's ID or name. Below, you'll find details about the routes and controllers that handle these operations.
 
-Click here to see the API documentation [here 👉🏽👉🏽👉🏽](https://documenter.getpostman.com/view/21648125/2s9YC2zto5)
+Click 👉🏽👉🏽  [here to see the API documentation ](https://documenter.getpostman.com/view/21648125/2s9YC2zto5)
+
+![Project Screenshot](/screenshots/screenshot.png)
 
 ## Routes and Controllers
 
@@ -63,6 +66,8 @@ const userSchema = new mongoose.Schema({
 });
 ```
 
+### UML
+![UML Screenshot](/screenshots/UML.png)
 
 ## Getting Started
 

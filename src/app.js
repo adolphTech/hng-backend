@@ -10,6 +10,8 @@ const cookieParser = require("cookie-parser");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use(express.static('./public'));
+
 // cookie parser
 app.use(cookieParser());
 app.use(cors());
@@ -19,6 +21,10 @@ app.use(cors());
 
 const userRoute = require("./Routes/User/User.router")
 
+app.get('/', (req, res) => {
+  // Send the HTML file as the response
+  res.sendFile('public/welcome.html', { root: __dirname });
+});
 
 
 app.use("/api", userRoute);
