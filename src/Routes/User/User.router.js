@@ -5,18 +5,16 @@ const {
   getPerson,
   updatePerson,
   deletePerson,
-  getAllPersons,
-} = require("./User.controller");
+  
+} = require("./User.Controller");
 
-// Create a new person and get all persons
-router.route("/")
-  .post(createPerson) //works
-  .get(getAllPersons); //works
+//usind name to manipulate
+router.route("/:name").post(createPerson)
+// Create a new person and with json body
+router.route("/").post(createPerson) 
 
-// Get, update, and delete a specific person by ID
-router.route("/:id")
-  .get(getPerson) //works
-  .put(updatePerson) //works
-  .delete(deletePerson); //works
+router.route("/:idOrName").get(getPerson).put(updatePerson).delete(deletePerson)    // This will retrieve a person by ID or name
+
+ 
 
 module.exports = router;
