@@ -175,7 +175,7 @@ Here's an example of how to use the Task2-HNG API to GET a new person with just 
 
 In case of errors, the Task2-HNG API returns appropriate error responses. Here are some examples of error responses for the GET, PUT, and DELETE endpoints:
 
-### GET `/api/persons/name`
+### GET `/api/name`
 
 - **Request URL**: [https://task2-hng.onrender.com/api/nonexistent](https://task2-hng.onrender.com/api/nonexistent)
 - **Request Method**: GET
@@ -187,7 +187,7 @@ In case of errors, the Task2-HNG API returns appropriate error responses. Here a
   "error": "Person not found"
 }
 ```
-### PUT `/api/persons/name`
+### PUT `/api/name`
 
 - **Request URL**: [https://task2-hng.onrender.com/api/nonexistent](https://task2-hng.onrender.com/api/nonexistent)
 - **Request Method**: PUT
@@ -200,7 +200,7 @@ In case of errors, the Task2-HNG API returns appropriate error responses. Here a
 }
 ```
 
-### GET `/api/persons/:name`
+### DELETE `/api/name`
 
 - **Request URL**: [https://task2-hng.onrender.com/api/nonexistent](https://task2-hng.onrender.com/api/nonexistent)
 - **Request Method**: DELETE
